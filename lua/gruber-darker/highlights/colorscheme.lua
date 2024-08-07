@@ -52,8 +52,8 @@ M.highlights.quartz_bold = Highlight.new("GruberDarkerQuartzBold", { fg = c.quar
 M.highlights.darker_niagara = Highlight.new("GruberDarkerDarkestNiagara", { fg = c["niagara-2"] })
 M.highlights.darker_niagara_bold =
 	Highlight.new("GruberDarkerDarkestNiagaraBold", { fg = c["niagara-2"], bold = opts.bold })
-M.highlights.dark_niagara = Highlight.new("GruberDarkerDarkNiagara", { fg = c["niagara-1"] })
-M.highlights.dark_niagara_bold = Highlight.new("GruberDarkerDarkNiagaraBold", { fg = c["niagara-1"], bold = opts.bold })
+M.highlights.dark_niagara = Highlight.new("GruberDarkerDarkNiagara", { fg = c["fg-1"] })
+M.highlights.dark_niagara_bold = Highlight.new("GruberDarkerDarkNiagaraBold", { fg = c["fg-1"], bold = opts.bold })
 M.highlights.niagara = Highlight.new("GruberDarkerNiagara", { fg = c.niagara })
 M.highlights.niagara_bold = Highlight.new("GruberDarkerNiagaraBold", { fg = c.niagara, bold = opts.bold })
 

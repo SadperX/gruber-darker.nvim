@@ -113,9 +113,9 @@ M.highlights.quick_fix_line = Highlight.new("QuickFixLine", { bg = c["bg+2"], bo
 -- Search
 
 ---Last search pattern highlighting (see 'hlsearch').  Also used for similar items that need to stand out.
-M.highlights.search = Highlight.new("Search", { fg = c.black, bg = c.yellow })
+M.highlights.search = Highlight.new("Search", { bg = c["bg+2"], reverse = opts.invert.visual })
 ---'incsearch' highlighting; also used for the text replaced with ":s///c"
-M.highlights.incremental_search = Highlight.new("IncSearch", { fg = c.black, bg = c["fg+2"] })
+M.highlights.incremental_search = Highlight.new("IncSearch", { bg = c["niagara-2"], fg = c.fg })
 M.highlights.current_search = Highlight.new("CurSearch", { link = M.highlights.incremental_search })
 
 ---Unprintable characters: text displayed differently from what it really is.  But not 'listchars' whitespace. |hl-Whitespace|

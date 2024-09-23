@@ -85,7 +85,7 @@ M.highlights.func_macro = Highlight.new("@function.macro", { link = vim_hl.macro
 ---Method definitions
 M.highlights.method = Highlight.new("@method", { link = vim_hl.func })
 ---Method calls
-M.highlights.method_call = Highlight.new("@method.call", { link = vim_hl.func })
+M.highlights.method_call = Highlight.new("@method.call", { fg = c["fg-2"]})
 
 ---constructor calls and definitions
 M.highlights.constructor = Highlight.new("@constructor", { link = vim_hl.func })

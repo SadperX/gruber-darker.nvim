@@ -209,7 +209,7 @@ M.highlights.pre_condit = Highlight.new("PreCondit", { link = gruber_hl.quartz }
 ---(preferred) int, long, char, etc.
 M.highlights.type = Highlight.new("Type", { link = gruber_hl.quartz })
 ---Static, register, volatile, etc.
-M.highlights.storage_class = Highlight.new("StorageClass", { link = gruber_hl.yellow_bold })
+M.highlights.storage_class = Highlight.new("StorageClass", { link = gruber_hl.quartz })
 ---Struct, union, enum, etc.
 M.highlights.structure = Highlight.new("Structure", { link = gruber_hl.yellow_bold })
 ---A typedef

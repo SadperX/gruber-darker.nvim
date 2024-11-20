@@ -30,7 +30,7 @@ M.highlights.cursor_im = Highlight.new("CursorIM", { fg = c.none, bg = c.yellow 
 ---Screen-column at the cursor, when 'cursorcolumn' is set.
 M.highlights.cursor_column = Highlight.new("CursorColumn", { bg = c["bg+2"] })
 ---Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
-M.highlights.cursor_line = Highlight.new("CursorLine", { bg = c["bg+1"] })
+M.highlights.cursor_line = Highlight.new("CursorLine", { bg = c.bg })
 ---Directory names (and other special names in listings)
 M.highlights.directory = Highlight.new("Directory", { link = gruber_hl.niagara_bold })
 
@@ -73,7 +73,7 @@ M.highlights.line_number = Highlight.new("LineNr", { fg = c["bg+4"] })
 ---Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
 M.highlights.cursor_line_number = Highlight.new("CursorLineNr", { fg = c.yellow })
 ---The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
-M.highlights.match_paren = Highlight.new("MatchParen", { fg = c.fg, bg = c.wisteria })
+M.highlights.match_paren = Highlight.new("MatchParen", { fg = c["bg+2"], bg = c.wisteria })
 ---'showmode' message (e.g., "---INSERT ---")
 M.highlights.mode_msg = Highlight.new("ModeMsg", { link = gruber_hl.fg2 })
 ---Area for messages and cmdline
@@ -115,7 +115,7 @@ M.highlights.quick_fix_line = Highlight.new("QuickFixLine", { bg = c["bg+2"], bo
 ---Last search pattern highlighting (see 'hlsearch').  Also used for similar items that need to stand out.
 M.highlights.search = Highlight.new("Search", { bg = c["bg+2"], reverse = opts.invert.visual })
 ---'incsearch' highlighting; also used for the text replaced with ":s///c"
-M.highlights.incremental_search = Highlight.new("IncSearch", { bg = c["niagara-2"], fg = c.fg })
+M.highlights.incremental_search = Highlight.new("IncSearch", { bg = c["niagara-1"], fg = c["bg+1"], bold = opts.bold })
 M.highlights.current_search = Highlight.new("CurSearch", { link = M.highlights.incremental_search })
 
 ---Unprintable characters: text displayed differently from what it really is.  But not 'listchars' whitespace. |hl-Whitespace|
@@ -135,9 +135,9 @@ M.highlights.spell_rare = Highlight.new("SpellRare", { undercurl = opts.undercur
 -- Statusline
 
 ---Status line of current window
-M.highlights.status_line = Highlight.new("StatusLine", { fg = c.white, bg = c["bg+1"] })
+M.highlights.status_line = Highlight.new("StatusLine", { fg = c.fg, bg = c["bg+0"] })
 ---Status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
-M.highlights.status_line_non_current = Highlight.new("StatusLineNC", { fg = c.quartz, bg = c["bg+1"] })
+M.highlights.status_line_non_current = Highlight.new("StatusLineNC", { fg = c.brown, bg = c["bg+0"] })
 
 -- Tabline
 
@@ -163,7 +163,6 @@ M.highlights.wild_menu = Highlight.new("WildMenu", { fg = c.black, bg = c.yellow
 ---These groups are not listed as vim groups,
 ---but they are defacto standard group names for syntax highlighting.
 ---commented out groups should chain up to their "preferred" group by
---,
 ---Uncomment and edit if you want more specific syntax highlighting.
 
 ---(preferred) any constant

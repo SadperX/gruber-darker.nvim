@@ -12,7 +12,9 @@ local providers = {
 	require("gruber-darker.highlights.terminal"),
 	require("gruber-darker.highlights.treesitter"),
 	require("gruber-darker.highlights.cmp"),
+	require("gruber-darker.highlights.blink"),
 	require("gruber-darker.highlights.telescope"),
+	require("gruber-darker.highlights.compilation"),
 }
 
 ---Set highlights for configured providers

@@ -22,6 +22,8 @@ end
 M.highlights.fg0 = Highlight.new("GruberDarkerFg0", { fg = c.fg })
 M.highlights.fg1 = Highlight.new("GruberDarkerFg1", { fg = c["fg+1"] })
 M.highlights.fg2 = Highlight.new("GruberDarkerFg2", { fg = c["fg+2"] })
+M.highlights.fg_1 = Highlight.new("GruberDarkerFg_1", { fg = c["fg-1"] })
+M.highlights.fg_2 = Highlight.new("GruberDarkerFg_2", { fg = c["fg-2"] })
 
 M.highlights.bg_1 = Highlight.new("GruberDarkerBg_1", { fg = c["bg-1"] })
 M.highlights.bg0 = Highlight.new("GruberDarkerBg0", { fg = c.bg })

@@ -55,7 +55,7 @@ M.highlights.term_cursor = Highlight.new("TermCursor", { bg = c.yellow })
 ---TermCursorNC= { }, ---cursor in an unfocused terminal
 
 ---Error messages on the command line
-M.highlights.error_msg = Highlight.new("ErrorMsg", { fg = c.white, bg = c.red })
+M.highlights.error_msg = Highlight.new("ErrorMsg", { link = gruber_hl.red_bold })
 ---The column separating vertically split windows
 M.highlights.vert_split = Highlight.new("VertSplit", { fg = c["fg+2"], bg = c["bg+1"] })
 ---The column separating vertically split windows

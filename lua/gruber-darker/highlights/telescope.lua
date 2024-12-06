@@ -18,8 +18,8 @@ M.highlights.telescope_normal = Highlight.new("TelescopeNormal", { fg = gruber_h
 M.highlights.telescope_matching = Highlight.new("TelescopeMatching", { link = gruber_hl.yellow_bold })
 M.highlights.telescope_border = Highlight.new("TelescopeBorder", { link = vim_hl.float_border })
 M.highlights.telescope_prompt_prefix = Highlight.new("TelescopePromptPrefix", { link = gruber_hl.niagara })
-M.highlights.telescope_title = Highlight.new("TelescopeTitle", { fg = c.green })
-M.highlights.telescope_selection = Highlight.new("TelescopeSelection", { fg = c.green, bg = c["niagara-2"] })
+M.highlights.telescope_title = Highlight.new("TelescopeTitle", { fg = c.quartz })
+M.highlights.telescope_selection = Highlight.new("TelescopeSelection", { fg = c.brown, bg = c['bg+1'] })
 M.highlights.telescope_multi_selection = Highlight.new("TelescopeMultiSelection", { link = vim_hl.cursor_line })
 M.highlights.telescope_selection_caret = Highlight.new("TelescopeSelectionCaret", { link = gruber_hl.yellow })
 
